@@ -1,0 +1,118 @@
+set nocompatible
+
+" First, set the leader keys
+let mapleader = "\<Space>"
+let maplocalleader = "\\"
+
+" Basic settings --------------------------------------------------------- {{{
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+set number              " Show line number
+set rnu                 " Relative line numbering
+set ruler               " Show the cursor position all the time
+set tabstop=4           " Set Tab to 4 spaces
+set shiftwidth=4        " CTRL-T and CTRL-D use 4 spaces
+set expandtab           " always expand tabs to spaces
+set encoding=utf-8      " UTF-8
+set linebreak           " Break long lines only at specific symbols
+set showcmd             " Display incomplete commands
+set history=500         " Keep 500 lines of command line history
+set undofile            " Undo even after closing and re-openninf a file
+set autoread            " Automatically re-read the file if it has changed
+set scrolloff=999       " Keep cursor centred vertically on the screen
+set incsearch           " Do incremental searching
+set ignorecase          " To make smart case work
+set smartcase           " Ignore case if search pattern is all lowercase,
+
+" This would reduce the load on the left hand
+inoremap jk <esc>
+vnoremap jk <esc>
+snoremap jk <esc>
+
+" Not sure it's a good idea, but let's try it out
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
+" More logical behavior of Y
+noremap Y y$
+
+" After yanking in visual mode move cursor to the end of yanked text
+vnoremap y y`]
+
+" Play macro at reg. q. Just press qq to record it
+nnoremap <leader>q @q
+" Replay last macro
+nnoremap <leader>a @@
+
+
+" If a string is wrapped these mappings make navigation easier
+nnoremap j gj
+nnoremap k gk
+onoremap j gj
+onoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+nnoremap gj j
+nnoremap gk k
+onoremap gj j
+onoremap gk k
+vnoremap gj j
+vnoremap gk k
+
+nnoremap 0 g0
+nnoremap $ g$
+onoremap 0 g0
+onoremap $ g$
+vnoremap 0 g0
+vnoremap $ g$
+
+nnoremap g0 0
+nnoremap g$ $
+onoremap g0 0
+onoremap g$ $
+vnoremap g0 0
+vnoremap g$ $
+
+" easier jumps to beginning/end of line
+noremap H ^
+noremap L $
+vnoremap L g_
+
+" Map Ctrl+V to paste in Insert mode
+inoremap <c-v> <c-r>"
+" Map Ctrl+C to to copy in Visual mode
+vnoremap <c-c> "+y
+
+" Search visually selected text
+vnoremap // y/<C-R>"<CR>
+
+" Formatting with Q (remember cursor position in normal mode)
+nnoremap Q mlgqip`l
+vnoremap Q gq
+" Reformat line.
+nnoremap ql gqq
+}}}
+
+" Splits ----------------------------------------------------------------- {{{
+set splitbelow          " Open new split below by default
+set splitright          " Open new vertical split on the right by default
+" Split the window with shortcuts
+nnoremap <leader>vs :vsplit<space>
+nnoremap <leader>s  :split<space>
+" Make navigation between screens easier
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>h <c-w>h
+nnoremap <leader>l <c-w>l
+"Two splits scrolling together
+nnoremap <leader>sb :set scrollbind!<cr>
+" Jump to the next/previous error in quickfix window
+nnoremap <leader>ln :lne<cr>
+nnoremap <leader>lp :lp<cr>
+" }}}
+
+" Enable surround plugin
+set surround
