@@ -1,5 +1,5 @@
 # shortcuts for cd
-code=~/Documents/Code
+pr=~/Documents/Code
 ds=~/Documents/Code/DataScience
 lit=~/Documents/Lit
 ref=~/Documents/Lit/refs
