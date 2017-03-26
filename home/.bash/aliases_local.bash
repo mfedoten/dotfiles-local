@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 shopt -s expand_aliases
+shopt -s direxpand
 
 # shortcuts for cd
 pr=~/Documents/Prog
