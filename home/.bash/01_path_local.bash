@@ -6,4 +6,4 @@ path_prepend $HOME/.local/bin
 path_prepend $HOME/anaconda/bin
 
 # Add PYTHONPATH before you actually start using virtual env
-PYTHONPATH=/home/mariia/Documents/Code/DataScience:$PYTHONPATH
+export PYTHONPATH=/home/mariia/Documents/Code/DataScience:$PYTHONPATH
