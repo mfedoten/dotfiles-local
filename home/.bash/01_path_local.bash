@@ -1,16 +1,7 @@
-# MacPorts
-path_append /opt/local/sbin
-path_prepend /opt/local/bin
-
-# GNU utils installed with MacPorts
-# http://www.lorrin.org/blog/2013/08/09/gnu-find-on-os-x/
-path_prepend /opt/local/libexec/gnubin
-
-# Git
-path_prepend /usr/local/git/bin
+# GNU utils installed with Homebrew
+# https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities
+path_prepend /usr/local/opt/coreutils/libexec/gnuman
+path_prepend /usr/local/opt/coreutils/libexec/gnubin
 
 # Python
-path_prepend /opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
-
-# Latex
-path_prepend /Library/TeX/texbin
+path_prepend $HOME/anaconda/bin
