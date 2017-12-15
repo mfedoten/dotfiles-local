@@ -5,3 +5,8 @@ path_prepend /usr/local/opt/coreutils/libexec/gnubin
 
 # Python
 path_prepend $HOME/anaconda/bin
+# Add PYTHONPATH before you actually start using virtual env
+PYDIR=/home/mariia/Documents/Code/work
+if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
+    export PYTHONPATH=$PYDIR:$PYTHONPATH
+fi
