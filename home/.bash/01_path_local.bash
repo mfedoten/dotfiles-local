@@ -13,3 +13,8 @@ PYDIR=/home/mariia/Documents/Code/DataScience
 if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
     export PYTHONPATH=$PYDIR:$PYTHONPATH
 fi
+
+# Pyenv stuff
+export PATH="/home/mariia/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
