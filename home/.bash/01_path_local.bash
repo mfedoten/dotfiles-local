@@ -15,6 +15,6 @@ if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
 fi
 
 # Pyenv stuff
-export PATH="/home/mariia/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="/home/mariia/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
