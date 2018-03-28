@@ -9,9 +9,9 @@ path_prepend $HOME/anaconda/bin
 path_append /opt/sonarlint-cli-2.1.0.566/bin
 
 # Add PYTHONPATH before you actually start using virtual env
-PYDIR=/home/mariia/Documents/Code/DataScience
-if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
-    export PYTHONPATH=$PYDIR:$PYTHONPATH
+pydir=/home/mariia/Documents/Code/DataScience
+if [ -d "$pydir" ] && [[ ":$PYTHONPATH:" != *":$pydir:"* ]]; then
+    export PYTHONPATH=$pydir:$PYTHONPATH
 fi
 
 # Pyenv stuff
