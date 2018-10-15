@@ -3,8 +3,6 @@
 path_prepend /usr/local/opt/coreutils/libexec/gnuman
 path_prepend /usr/local/opt/coreutils/libexec/gnubin
 
-# Python
-path_prepend $HOME/anaconda/bin
 # Add PYTHONPATH before you actually start using virtual env
 PYDIR=$HOME/Documents/Code/work
 if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
