@@ -7,3 +7,5 @@ mounts=/var/run/user/1000/gvfs
 ser_data=/media/serena/data
 ser_tech=/media/serena/tech
 
+# to allow TAB completion in conda commands
+eval "$(register-python-argcomplete conda)"
