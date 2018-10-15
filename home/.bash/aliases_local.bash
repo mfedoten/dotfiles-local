@@ -11,6 +11,3 @@ pr=~/Documents/Code
 # lit=~/Documents/PhD/Lit
 # phd=~/Documents/PhD
 # papers=~/Documents/PhD/Papers
-
-# to allow TAB completion in conda commands
-eval "$(register-python-argcomplete conda)"
