@@ -4,7 +4,7 @@ path_prepend /usr/local/opt/coreutils/libexec/gnuman
 path_prepend /usr/local/opt/coreutils/libexec/gnubin
 
 # Add PYTHONPATH before you actually start using virtual env
-PYDIR=$HOME/Documents/Code/work
-if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
-    export PYTHONPATH=$PYDIR:$PYTHONPATH
-fi
+# PYDIR=$HOME/Documents/Code/work
+# if [ -d "$PYDIR" ] && [[ ":$PYTHONPATH:" != *":$PYDIR:"* ]]; then
+#     export PYTHONPATH=$PYDIR:$PYTHONPATH
+# fi
