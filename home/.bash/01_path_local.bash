@@ -6,10 +6,10 @@ path_prepend $HOME/.local/bin
 path_append /opt/sonarlint-cli-2.1.0.566/bin
 
 # Add PYTHONPATH before you actually start using virtual env
-pydir=/home/mariia/Documents/Code/DataScience
-if [ -d "$pydir" ] && [[ ":$PYTHONPATH:" != *":$pydir:"* ]]; then
-    export PYTHONPATH=$pydir:$PYTHONPATH
-fi
+# pydir=/home/mariia/Documents/Code/DataScience
+# if [ -d "$pydir" ] && [[ ":$PYTHONPATH:" != *":$pydir:"* ]]; then
+#     export PYTHONPATH=$pydir:$PYTHONPATH
+# fi
 
 # Pyenv stuff
 # export PATH="/home/mariia/.pyenv/bin:$PATH"
