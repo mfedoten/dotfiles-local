@@ -1,3 +1,7 @@
+# The Fuck
+eval $(thefuck --alias)
+alias fuckit='export THEFUCK_REQUIRE_CONFIRMATION=False; fuck; export THEFUCK_REQUIRE_CONFIRMATION=True'
+
 # shortcuts for cd
 pr=~/Documents/Code
 ds=~/Documents/Code/DataScience
