@@ -10,4 +10,6 @@ alias update='sudo apt-get -qq update; sudo apt-get -qq dist-upgrade; sudo apt a
 
 # shortcuts for cd
 pr=~/Code
-ds=~/Code/DataScience
+ds=~/Code/biophy
+data=~/Code/cloud/data
+qa=~/Code/cloud/qualif

@@ -1,8 +1,8 @@
 set nocompatible
 
 " First, set the leader keys
-let mapleader = "\<Space>"
-let maplocalleader = "\\"
+let mapleader = " "
+" let maplocalleader = ","
 
 " Basic settings --------------------------------------------------------- {{{
 " Allow backspacing over everything in insert mode
@@ -19,7 +19,7 @@ set showcmd             " Display incomplete commands
 set history=500         " Keep 500 lines of command line history
 set undofile            " Undo even after closing and re-openninf a file
 set autoread            " Automatically re-read the file if it has changed
-set scrolloff=999       " Keep cursor centred vertically on the screen
+" set scrolloff=999       " Keep cursor centred vertically on the screen
 set incsearch           " Do incremental searching
 set ignorecase          " To make smart case work
 set smartcase           " Ignore case if search pattern is all lowercase,
@@ -90,10 +90,22 @@ vnoremap <c-c> "+y
 vnoremap // y/<C-R>"<CR>
 
 " Formatting with Q (remember cursor position in normal mode)
-nnoremap Q mlgqip`l
-vnoremap Q gq
-" Reformat line.
-nnoremap ql gqq
+nnoremap Q ml:action ReformatCode<CR>`l
+vnoremap Q :action ReformatCode<CR><Esc>
+" Paste new line above/below
+nnoremap ]<Space> o<Esc>k
+nnoremap [<Space> O<Esc>j
+" Comments
+nnoremap <leader>cc :action CommentByLineComment<CR>
+vnoremap <leader>cc :action CommentByBlockComment<CR><Esc>
+" Go to declaration
+nnoremap \g :action GotoDeclaration<CR>
+" Kinda jumplist
+nnoremap <c-o> :action Back<CR>
+nnoremap <c-n> :action Forward<CR>
+" CTRL-V -> CTRL-J
+nnoremap <c-j> <c-v>
+
 }}}
 
 " Splits ----------------------------------------------------------------- {{{
