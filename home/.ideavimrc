@@ -91,7 +91,7 @@ vnoremap // y/<C-R>"<CR>
 
 " Formatting with Q (remember cursor position in normal mode)
 nnoremap Q ml:action ReformatCode<CR>`l
-vnoremap Q :action ReformatCode<CR><Esc>
+vnoremap Q :action ReformatCode<CR><Esc><Esc>
 " Paste new line above/below
 nnoremap ]<Space> o<Esc>k
 nnoremap [<Space> O<Esc>j
@@ -104,7 +104,7 @@ nnoremap \g :action GotoDeclaration<CR>
 nnoremap <c-o> :action Back<CR>
 nnoremap <c-n> :action Forward<CR>
 " CTRL-V -> CTRL-J
-nnoremap <c-j> <c-v>
+" nnoremap <c-j> <c-v>
 
 }}}
 
