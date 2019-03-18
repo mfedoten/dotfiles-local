@@ -100,6 +100,7 @@ nnoremap <leader>cc :action CommentByLineComment<CR>
 vnoremap <leader>cc :action CommentByBlockComment<CR><Esc>
 " Go to declaration
 nnoremap \g :action GotoDeclaration<CR>
+nnoremap \N :action CallHierarchy<CR>
 " Kinda jumplist
 nnoremap <c-o> :action Back<CR>
 nnoremap <c-n> :action Forward<CR>
