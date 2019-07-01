@@ -3,10 +3,12 @@ path_prepend $HOME/bin
 path_prepend $HOME/.local/bin
 
 # Anaconda stuff
-if [ -f "$HOME/anaconda/etc/profile.d/conda.sh" ]; then
-    . $HOME/anaconda/etc/profile.d/conda.sh
-    conda activate
-fi
+# if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+#     . $HOME/miniconda3/etc/profile.d/conda.sh
+#     conda activate
+# fi
+
+path_prepend $HOME/anaconda/bin
 
 # Add PYTHONPATH before you actually start using virtual env
 # pydir=/home/mariia/Documents/Code/DataScience

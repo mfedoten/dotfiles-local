@@ -9,7 +9,5 @@ alias ge="gedit"
 alias update='sudo apt-get -qq update; sudo apt-get -qq dist-upgrade; sudo apt autoremove; sudo apt-get autoclean; sudo updatedb'
 
 # shortcuts for cd
-pr=~/Code
-ds=~/Code/biophy
-data=~/Code/cloud/data
-qa=~/Code/cloud/qualif
+pr=~/code
+algo=~/code/algo
