@@ -2,7 +2,7 @@
 path_prepend $HOME/bin
 path_prepend $HOME/.local/bin
 
-Anaconda stuff
+# Anaconda stuff
 if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
     . $HOME/miniconda3/etc/profile.d/conda.sh
     conda activate
