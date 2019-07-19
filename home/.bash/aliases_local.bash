@@ -28,8 +28,9 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # shortcuts for cd
-pr=~/Documents/Code
-ds=~/Documents/Code/Work
+pr=~/code
+bs=~/code/bios
+algo=~/code/algo
 
 # rec=~/Documents/PhD/Codes
 # the=~/Documents/PhD/Manuscript
