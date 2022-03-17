@@ -7,3 +7,6 @@ if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
     . $HOME/miniconda3/etc/profile.d/conda.sh
     conda activate
 fi
+
+# poetry
+path_prepend $HOME/.poetry/bin:$PATH
