@@ -12,6 +12,3 @@ alias workon='conda activate'
 
 # shortcuts for cd
 pr=~/code
-algo=~/code/algo
-data=/data/misc
-dpy=~/code/algo/dreemonpy
