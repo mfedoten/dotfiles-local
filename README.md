@@ -8,7 +8,7 @@ I am using Ubuntu Gnome 22.04 LTS. A bit about the setup:
 - Theme. I'm using default Ubuntu theme (Yaru) or [Arc-Darker theme](https://github.com/jnsh/arc-theme) ```sudo apt install arc-theme```
 - The wallpaper I am using is in the `extras/wallpapers/` directory.
 - Extensions:
-  * `quake-mode` to support Quake mode for Tillix terminal under Wayland.
+  * [`quake-mode`](https://github.com/repsac-by/gnome-shell-extension-quake-mode) to support Quake mode for Tillix terminal under Wayland.
   * `Native window placement`
   * `Ubuntu AppIndicators`
   * `Ubuntu Dock`
