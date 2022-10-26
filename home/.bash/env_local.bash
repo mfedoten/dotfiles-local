@@ -6,3 +6,5 @@
 # fi
 # source /home/mariia/.local/bin/virtualenvwrapper.sh 2>/dev/null
 # VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
+export XDG_SESSION_TYPE=x11

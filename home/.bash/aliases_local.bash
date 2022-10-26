@@ -12,3 +12,4 @@ alias workon='conda activate'
 
 # shortcuts for cd
 pr=~/code
+ff=~/code/feetme
