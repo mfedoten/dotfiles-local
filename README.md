@@ -6,6 +6,7 @@ The main [repo](https://github.com/mfedoten/dotfiles) contains most of the dotfi
 
 I am using Ubuntu Gnome 22.04 LTS. A bit about the setup:
 - Theme. I'm using default Ubuntu theme (Yaru) or [Arc-Darker theme](https://github.com/jnsh/arc-theme) ```sudo apt install arc-theme```
+- I use Meslo S LG font [patched for Powerline](https://github.com/powerline/fonts) in my terminal to play nicely with vim and tmux statuslines.
 - The wallpaper I am using is in the `extras/wallpapers/` directory.
 - Extensions:
   * [`quake-mode`](https://github.com/repsac-by/gnome-shell-extension-quake-mode) to support Quake mode for Tillix terminal under Wayland.
